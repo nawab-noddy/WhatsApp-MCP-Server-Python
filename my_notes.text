@@ -1,0 +1,11 @@
+17/08/2026
+
+The client actually translate the operations or methods expose by the service layer in a way that can be uderstood and 
+used by the interface clien is refeerring to.
+
+I have a doubt as I jut read that client will expose the methods to the service layer but isn't the client layer will use
+the service layer methods or operations ?
+
+This specific line Give me around 5–7 methods that you think the `WhatsAppClient` should expose to the Service layer.
+
+Next will do Client Contracts.
