@@ -66,3 +66,39 @@ ChatSummary
 ├── unread_count
 └── last_message_preview
 ```
+
+# Method - 4
+
+**Method Name** - **`get_chat_history`**
+
+**Purpose** - Retrieves the historical messages within a specific conversation. The AI needs this to understand the context of a conversation before drafting a reply.
+
+**Input** - 
+- **`chat_id: str`**
+- **`limit: int = 20`** (Number of historical messages to fetch)
+
+**Return** - A list of **`Message`** objects, ordered chronologically.
+
+```text
+Message
+├── message_id
+├── sender_id (Who sent it)
+├── text_content
+├── is_from_me (Boolean)
+└── timestamp
+```
+# Method - 5
+
+**Method Name** - **`get_client_status`**
+
+**Purpose** - Checks the current health and authentication state of the underlying WhatsApp bridge. The Service layer can use this to gracefully tell the user if the phone is disconnected before trying to send a message.
+
+**Input** - None
+
+**Return** - A **`Status`** object
+
+```text
+Status
+├── is_connected (Boolean)
+├── state (e.g., "AUTHENTICATED", "REQUIRES_QR", "OFFLINE")
+```
