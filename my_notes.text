@@ -34,3 +34,5 @@ waht if this occurs
 That's a classic TOCTOU (time-of-check to time-of-use) problem.
 
 No need to solve it right now but document here for future reference.
+
+Request Respone Model - client request and server respond
