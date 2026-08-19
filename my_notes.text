@@ -16,3 +16,21 @@ Create the methods of the client Contracts.
 19/08/3036
 
 Continue defining the more methods
+
+New probelm arise when I draft a methods of "get_client_status()"
+
+get_client_status()
+     ↓
+CONNECTED
+
+0.5 seconds later...
+
+send_text_message()
+     ↓
+CONNECTION LOST
+
+waht if this occurs 
+
+That's a classic TOCTOU (time-of-check to time-of-use) problem.
+
+No need to solve it right now but document here for future reference.
