@@ -1,6 +1,6 @@
 # Methods - 1
 
-**Method Name** - **`find_contacts`**
+**Method Name** - **`find_contact`**
 
 **Purpose** - Find a WhatsApp contact based on information provided by the Service.
 
@@ -12,7 +12,6 @@
 Contact
 ├── id
 ├── name
-└── phone_number
 ```
 **So conceptually:**
 ``` text
